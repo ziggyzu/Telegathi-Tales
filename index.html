@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teligathi Tales — Storytellers from Teligathi</title>
+    <meta name="description" content="Teligathi Tales is an intimate music and storytelling platform born in Khulna, Bangladesh.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+Bengali:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- NAVIGATION                                      -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logo.jpg" alt="Teligathi Tales" class="nav-logo-img">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#tales" class="nav-link">Tales</a></li>
+                <li><a href="#vault" class="nav-link">Vault</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#collective" class="nav-link">Originals</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- HERO SECTION                                    -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+
+        <!-- Floating particles -->
+        <div class="particles">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+        </div>
+
+        <div class="hero-content">
+            <img src="assets/images/logo.jpg" alt="Teligathi Tales" class="hero-logo">
+            <h1 class="hero-headline">Storytellers from Teligathi</h1>
+            <p class="hero-subtext">To everyone who would listen</p>
+            <a href="#tales" class="btn-book-session">Book Next Session</a>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </a>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- ABOUT SECTION                                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="about" id="about">
+        <div class="section-container about-grid">
+            <div class="about-text fade-in-up">
+                <span class="section-label">About Us</span>
+                <h2 class="section-heading">Teligathi Tales</h2>
+                <div class="gold-divider"></div>
+                <p>
+                    Telegathi Tales is an intimate music and storytelling platform born in Khulna, 
+                    Bangladesh—created to bring artists and music lovers closer together in an 
+                    environment built around music, conversation, creativity, and connection.
+                </p>
+                <p>
+                    Through intimate live sessions, acoustic performances, musical collaborations, 
+                    artist conversations, and thoughtfully produced visual content, we create a space 
+                    where emerging voices can be heard, established artists can connect, and audiences 
+                    can experience music beyond the stage.
+                </p>
+                <p>
+                    Starting from a small room in Khulna, our vision is to grow into a community and 
+                    creative platform that celebrates the people, stories, and sounds shaping 
+                    Bangladesh's music culture.
+                </p>
+                <p class="about-closing">
+                    Come for the music. Stay for the stories.
+                </p>
+            </div>
+            <div class="about-image-wrapper fade-in-up">
+                <div class="about-image-frame">
+                    <img src="assets/images/instruments.jpg" alt="Instruments at Teligathi Tales session" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decorative divider -->
+    <div class="ink-divider">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" class="ink-svg">
+            <path d="M0,30 C200,10 400,50 600,30 C800,10 1000,50 1200,30" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"/>
+        </svg>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- UPCOMING TALES (Sessions)                       -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="tales" id="tales">
+        <div class="section-container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-heading section-heading--flourish">Upcoming Tales</h2>
+                <p class="section-subtitle">Intimate sessions, curated with care. Secure your seat before the story begins.</p>
+            </div>
+
+            <div class="tales-grid tales-grid--single">
+
+                <!-- Single Artist Card -->
+                <article class="artist-card fade-in-up">
+                    <div class="artist-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d1b3d 50%, #16213e 100%);">
+                        <div class="artist-card-date-badge">
+                            <span class="badge-month">TBA</span>
+                            <span class="badge-day">—</span>
+                        </div>
+                    </div>
+                    <div class="artist-card-body">
+                        <h3 class="artist-card-name">Artist To Be Announced</h3>
+                        <div class="artist-card-details">
+                            <span class="detail-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Time TBA
+                            </span>
+                            <span class="detail-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                The Studio, Khulna
+                            </span>
+                        </div>
+                        <div class="artist-card-tags">
+                            <span class="tag">Folk-Fusion</span>
+                            <span class="tag">Acoustic</span>
+                        </div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEzLcIWW8K0bWtyuoHBiGg65b08gdXOyyWOKxrkTNJx-e0Bg/viewform?usp=dialog" 
+                           class="btn-secure-tale" target="_blank" rel="noopener">
+                            Secure Your Tale
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- THE VAULT (Past Performances)                   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="vault" id="vault">
+        <div class="section-container">
+            <div class="section-header fade-in-up">
+                <span class="section-label">Archive</span>
+                <h2 class="section-heading section-heading--flourish">The Vault</h2>
+                <p class="section-subtitle">Stories already told. Moments preserved forever.</p>
+            </div>
+
+            <div class="vault-grid">
+
+                <!-- Video Card 1 -->
+                <div class="video-card fade-in-up">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Video Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Session I — The First Chapter</h3>
+                        <p class="video-artist">Various Artists</p>
+                        <p class="video-date">Coming Soon</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card fade-in-up">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Video Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Session II — Strings & Silence</h3>
+                        <p class="video-artist">Various Artists</p>
+                        <p class="video-date">Coming Soon</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card fade-in-up">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Video Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Session III — Echoes of the River</h3>
+                        <p class="video-artist">Various Artists</p>
+                        <p class="video-date">Coming Soon</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 4 -->
+                <div class="video-card fade-in-up">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4">
+                                <polygon points="5 3 19 12 5 21 5 3"/>
+                            </svg>
+                            <span>Video Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">Session IV — Whispered Verses</h3>
+                        <p class="video-artist">Various Artists</p>
+                        <p class="video-date">Coming Soon</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- GALLERY                                         -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="gallery" id="gallery">
+        <div class="section-container">
+            <div class="section-header fade-in-up">
+                <span class="section-label">Moments</span>
+                <h2 class="section-heading section-heading--flourish">Gallery</h2>
+                <p class="section-subtitle">Glimpses from our sessions — the faces, the music, the warmth.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item--tall fade-in-up">
+                    <img src="assets/images/gallery-1.jpg" alt="Guitarist performing at Teligathi Tales session" class="gallery-img" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/images/gallery-2.jpg" alt="Artists sharing a moment at the session" class="gallery-img" loading="lazy">
+                </div>
+                <div class="gallery-item fade-in-up">
+                    <img src="assets/images/gallery-3.jpg" alt="Behind the scenes at Teligathi Tales" class="gallery-img" loading="lazy">
+                </div>
+                <div class="gallery-item gallery-item--wide fade-in-up">
+                    <img src="assets/images/gallery-4.jpg" alt="The Teligathi Tales community" class="gallery-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- THE COLLECTIVE (Original Releases)              -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <section class="collective" id="collective">
+        <div class="section-container">
+            <div class="section-header fade-in-up">
+                <span class="section-label">Originals</span>
+                <h2 class="section-heading">The First Chapters: Originals</h2>
+                <span class="coming-soon-badge">Coming Soon</span>
+                <p class="section-subtitle">Original albums produced by Teligathi Tales — where sessions become stories set in stone.</p>
+            </div>
+
+            <div class="collective-grid">
+
+                <!-- Album Card 1 -->
+                <div class="album-card fade-in-up">
+                    <div class="album-art" style="background: linear-gradient(135deg, #1a1a2e, #2d1b3d, #0d0d0d);">
+                        <img src="assets/images/logo.jpg" alt="Teligathi Tales stamp" class="album-stamp">
+                        <span class="album-chapter">Chapter I</span>
+                    </div>
+                    <h3 class="album-title">To Be Revealed</h3>
+                </div>
+
+                <!-- Album Card 2 -->
+                <div class="album-card fade-in-up">
+                    <div class="album-art" style="background: linear-gradient(135deg, #16213e, #0d0d0d, #2d1b3d);">
+                        <img src="assets/images/logo.jpg" alt="Teligathi Tales stamp" class="album-stamp">
+                        <span class="album-chapter">Chapter II</span>
+                    </div>
+                    <h3 class="album-title">To Be Revealed</h3>
+                </div>
+
+                <!-- Album Card 3 -->
+                <div class="album-card fade-in-up">
+                    <div class="album-art" style="background: linear-gradient(135deg, #2d1b3d, #16213e, #1a1a2e);">
+                        <img src="assets/images/logo.jpg" alt="Teligathi Tales stamp" class="album-stamp">
+                        <span class="album-chapter">Chapter III</span>
+                    </div>
+                    <h3 class="album-title">To Be Revealed</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- FOOTER                                          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-border"></div>
+        <div class="footer-container">
+
+            <img src="assets/images/logo.jpg" alt="Teligathi Tales" class="footer-logo">
+
+            <p class="footer-tagline">Storytellers from Teligathi</p>
+
+            <!-- Social Links (including WhatsApp) -->
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/telegathitales?igsi=dXFpeTd3enkybXJx&utm_source=qr" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@telegathitales?si=R5xG4vck2DLQDXFO" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/share/19VukahuXe/?mibextid=wwXIfr" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/8801533671129" class="social-link social-link--whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Teligathi Tales. All rights reserved.</p>
+                <p class="footer-production">A Teligathi Tales Production</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
