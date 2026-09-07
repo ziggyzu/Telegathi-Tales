@@ -818,98 +818,86 @@ body::after {
     opacity: 0.5;
 }
 
-.video-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 22px 26px;
-}
-
-.video-cover-link {
-    position: relative;
-    flex-shrink: 0;
+/* ─── Vault Card (Clickable Cover Tile) ─────────────────────────── */
+.vault-card {
     display: block;
-    border-radius: 8px;
+    background: var(--charcoal-light);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(201, 168, 76, 0.2);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+    transition: transform var(--transition-base),
+                box-shadow var(--transition-base),
+                border-color var(--transition-base);
+    text-decoration: none;
+    color: inherit;
 }
 
-.video-cover-link:hover {
-    transform: scale(1.03);
-    border-color: var(--gold);
-    box-shadow: var(--shadow-glow-gold);
+.vault-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-glow-gold-hover);
+    border-color: rgba(201, 168, 76, 0.35);
 }
 
-.video-cover {
-    width: 140px;
-    height: 85px;
+.vault-card-cover {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.vault-card-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
+    transition: transform 0.5s ease;
 }
 
-.playlist-badge {
+.vault-card:hover .vault-card-img {
+    transform: scale(1.04);
+}
+
+.vault-card-play {
     position: absolute;
-    bottom: 6px;
-    right: 6px;
-    background: rgba(13, 13, 13, 0.88);
-    color: var(--gold);
-    font-size: 0.65rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    padding: 2px 6px;
-    border-radius: 4px;
+    inset: 0;
     display: flex;
     align-items: center;
-    gap: 4px;
-    border: 1px solid rgba(201, 168, 76, 0.3);
-    backdrop-filter: blur(4px);
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity var(--transition-base);
 }
 
-.video-details {
-    flex: 1;
+.vault-card:hover .vault-card-play {
+    opacity: 1;
 }
 
-.video-title {
+.vault-card-play svg {
+    color: var(--cream);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.vault-card-info {
+    padding: 20px 24px;
+}
+
+.vault-card-title {
     font-family: var(--font-heading);
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--gold);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
-.video-artist {
+.vault-card-artist {
     font-size: 0.9rem;
     color: var(--cream);
     line-height: 1.5;
 }
 
-.video-date {
+.vault-card-date {
     font-size: 0.8rem;
     color: var(--brass);
     margin-top: 4px;
-}
-
-.vault-yt-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-    font-size: 0.82rem;
-    color: var(--gold-light);
-    border: 1px solid rgba(201, 168, 76, 0.25);
-    padding: 6px 14px;
-    border-radius: 20px;
-    transition: all var(--transition-fast);
-}
-
-.vault-yt-btn:hover {
-    background: rgba(201, 168, 76, 0.12);
-    border-color: var(--gold);
-    color: var(--gold);
-    transform: translateX(2px);
 }
 
 
@@ -1488,21 +1476,8 @@ body::after {
         padding: 20px;
     }
 
-    .video-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        padding: 18px 20px;
-    }
-
-    .video-cover-link {
-        width: 100%;
-    }
-
-    .video-cover {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
+    .vault-card-info {
+        padding: 16px 20px;
     }
 
     /* Footer adjustments */
